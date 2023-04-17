@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+     <link rel="stylesheet" th:href="@{/css/weather.css}"/>
+    <title>Current Weather</title>
+</head>
+<body>
+    <div class="Main_title">Local Weather Forecast</div>
+    <div th:object="${current}" class="flex-container">
+        <div class="item1">
+            <div class="main_weather">
+                <img id = "avatar" th:src="*{icon}" />               
+                <div style="text-align: left;" th:text="*{name}">?</div>
+                <div style="text-align: left;" th:text="*{country}">?</div>
+            </div>
+            <div class="title-1">
+                <div class="flex">
+                    <div class="day_title">????</div>
+                    <div th:text="*{day}" class="day_title2">?</div>
+                </div>
+                <div th:text="*{text}">hello world</div>
+                 <div th:text="*{temperature}">something</div>
+            </div>
+        </div>
+        <div class="item2">
+            <div>Wind mph :..............................................................................................................<span th:text="*{wind_mph}">0</span></div>
+            <div>Wind degree :...........................................................................................................<span th:text="*{wind_degree}">0</span></div>
+            <div>Wind direction :........................................................................................................<span th:text="*{wind_dir}">0</span></div>
+            <div>Humidity :.............................................................................................................<span th:text="*{humidity}">0</span></div>
+            <div>Cloud :.....................................................................................................................<span th:text="*{cloud}">0</span></div>
+        </div>
+     </div>
+        <div class="item3">
+            <div   th:each="form: ${forms}" th:object="${form}" class="grid_item">
+                <div class="flex">
+                    <div class="day_title">????</div>
+                    <div th:text="*{day}" id="weekday_title" class="day_title2">?</div>
+                </div>
+                <div class="grid_item_bottom">
+                    <img id ="weekday_image" th:src="*{icon}" />             
+                    <div id="conditon"  th:text="*{text}">something</div>
+                    <div class="celcius" th:text="*{temperature}">something</div>
+                </div>
+            </div>
+        </div>      
+    <script type="text/javascript" th:src="@{/js/weather.js}"/></script>
+</body>
+</html>

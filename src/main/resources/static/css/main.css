@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Andada|Permanent+Marker|Raleway:300');
+
+input::-webkit-calendar-picker-indicator {
+  opacity: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.heading {
+    font-size: 45px;
+    font-weight: bold;
+    font-family: sans-serif;
+    text-align:center;
+}
+
+body {
+  background: #2196F3;
+  position: relative;
+  font-family: 'Roboto', sans-serif;
+  color: #fff;
+}
+
+#namer {
+  position: relative;
+  max-width: 80%;
+  margin: 150px auto 0;
+}
+
+#namer input {
+  border: 0;
+  border-bottom: 2px solid #1976D2;
+  border-top: 2px solid #1976D2;
+  border-left: 2px solid #1976D2;
+  width: 100%;
+  font-size: 30px;
+  line-height: 35px;
+  height: 70px;
+  text-align: center;
+  padding: 10px;
+  background: transparent;
+  background-color: white;
+  color: #2196F3;
+  border-bottom-left-radius: 30px;
+  border-top-left-radius: 30px;
+}
+
+#namer input:focus {
+  outline: 0;
+  color: #2196F3;
+}
+
+.onRow{
+  display: flex;
+}
+.button{
+  background: white;
+  opacity: 0.6;
+  padding: 15px;
+  width: 20%;
+  border: 2px solid #1976D2;
+  border-bottom-right-radius: 30px;
+  border-top-right-radius: 30px;
+
+}
+
