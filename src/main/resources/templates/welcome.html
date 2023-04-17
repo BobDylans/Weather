@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Weather Forecast</title>
+    <link rel="stylesheet" th:href="@{/css/main.css}"/>
+</head>
+<body>
+   <h1>Weather Forecast</h1>
+	<form name="weatherForm" action="/ouput">
+ 		<div id="namer">
+  			<div id="namer-input">
+  				  <label for="browser">Choose your City Name from the list:</label>
+  				  <div class="onRow">
+				<input list="cities" id="city" name="city" required>
+				<button class="button" onclick="validateForm()" >Submit</button>
+				</div>
+			  	<datalist id="cities">
+			  		
+			  	</datalist>
+  			</div>
+ 		</div>
+ 	</form>
+    <script type="text/javascript" th:src="@{/js/main.js}"/></script>
+</body>
+</html>
