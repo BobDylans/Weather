@@ -19,6 +19,7 @@ public class AppConfig {
               .baseUrl("http://api.weatherapi.com/v1/forecast.json")    //weatherapi
             .defaultHeader(HttpHeaders.CONTENT_TYPE, MediaType.APPLICATION_JSON_VALUE)
             .build();
+
     }
     
     @Bean
