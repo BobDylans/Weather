@@ -7,6 +7,7 @@ import java.util.List;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -27,8 +28,8 @@ public class WelcomeController {
         return "welcome"; //view
     }
 
-    @GetMapping("/ouput")   //weather forecast 7 day ahead
-    public String getCurrentWeather(@RequestParam(value="city", required=true) String cityAndCountryName,
+    @GetMapping("/ouput/{city}")   //weather forecast 7 day ahead
+    public String getCurrentWeather(@PathVariable("city") String cityAndCountryName,
                                     Model model) {    
         
         weatherService.getCityName(cityAndCountryName);

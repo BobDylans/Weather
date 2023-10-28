@@ -17,7 +17,7 @@ input::-webkit-calendar-picker-indicator {
 }
 
 body {
-  background: #2196F3;
+  background: greenyellow;
   position: relative;
   font-family: 'Roboto', sans-serif;
   color: #fff;
@@ -31,9 +31,9 @@ body {
 
 #namer input {
   border: 0;
-  border-bottom: 2px solid #1976D2;
-  border-top: 2px solid #1976D2;
-  border-left: 2px solid #1976D2;
+  border-bottom: 2px solid greenyellow;
+  border-top: 2px solid greenyellow;
+  border-left: 2px solid greenyellow;
   width: 100%;
   font-size: 30px;
   line-height: 35px;
@@ -42,7 +42,7 @@ body {
   padding: 10px;
   background: transparent;
   background-color: white;
-  color: #2196F3;
+  color: greenyellow;
   border-bottom-left-radius: 30px;
   border-top-left-radius: 30px;
 }
@@ -60,7 +60,7 @@ body {
   opacity: 0.6;
   padding: 15px;
   width: 20%;
-  border: 2px solid #1976D2;
+  border: 2px solid greenyellow;
   border-bottom-right-radius: 30px;
   border-top-right-radius: 30px;
 

@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
      <link rel="stylesheet" th:href="@{/css/weather.css}"/>
-    <title>Current Weather</title>
+    <title>城市天气</title>
 </head>
 <body>
-    <div class="Main_title">Local Weather Forecast</div>
+    <div class="Main_title">本地天气预报</div>
     <div th:object="${current}" class="flex-container">
         <div class="item1">
             <div class="main_weather">
@@ -20,15 +20,15 @@
                     <div th:text="*{day}" class="day_title2">?</div>
                 </div>
                 <div th:text="*{text}">hello world</div>
-                 <div th:text="*{temperature}">something</div>
+                 <div th:text="*{temperature}">注意事项</div>
             </div>
         </div>
         <div class="item2">
-            <div>Wind mph :..............................................................................................................<span th:text="*{wind_mph}">0</span></div>
-            <div>Wind degree :...........................................................................................................<span th:text="*{wind_degree}">0</span></div>
-            <div>Wind direction :........................................................................................................<span th:text="*{wind_dir}">0</span></div>
-            <div>Humidity :.............................................................................................................<span th:text="*{humidity}">0</span></div>
-            <div>Cloud :.....................................................................................................................<span th:text="*{cloud}">0</span></div>
+            <div>风速 :........................................................................................................<span th:text="*{wind_mph}">0</span></div>
+            <div>风度 :........................................................................................................<span th:text="*{wind_degree}">0</span></div>
+            <div>风向 :........................................................................................................<span th:text="*{wind_dir}">0</span></div>
+            <div>湿度 :........................................................................................................<span th:text="*{humidity}">0</span></div>
+            <div>云 :..........................................................................................................<span th:text="*{cloud}">0</span></div>
         </div>
      </div>
         <div class="item3">

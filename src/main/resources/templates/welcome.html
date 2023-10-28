@@ -3,22 +3,27 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Weather Forecast</title>
+    <title>天气预报系统</title>
     <link rel="stylesheet" th:href="@{/css/main.css}"/>
 </head>
 <body>
-   <h1>Weather Forecast</h1>
+   <h1>天气预报</h1>
 	<form name="weatherForm" action="/ouput">
  		<div id="namer">
   			<div id="namer-input">
-  				  <label for="browser">Choose your City Name from the list:</label>
+  				  <label for="browser">从表单中选择你想要查看的城市</label>
   				  <div class="onRow">
 				<input list="cities" id="city" name="city" required>
-				<button class="button" onclick="validateForm()" >Submit</button>
+				<button class="button" onclick="validateForm()" >提交</button>
 				</div>
 			  	<datalist id="cities">
-			  		
+
 			  	</datalist>
+				<datalist id="browser">
+					<option value="ShangHai"></option>
+					<option value="London"></option>
+
+				</datalist>
   			</div>
  		</div>
  	</form>
